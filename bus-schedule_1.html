@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+    
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images\bus_logo.png"></a>
+            <a href="http://www.koreaschool.org/"><img src="images\logo_school.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i> 
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="track.html">TRACKER</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>등교 노선표</h1>
+    </section>
+
+
+
+
+    <section class="bus-info">
+        <div class="bus-info-main">
+            <h1 class="bus-info-main-h"><i class="fa-solid fa-map-location-dot"></i>등교 노선 안내</h1>
+            <p>2024년 2학기 통학 버스 등교 노선표</p>
+        </div>
+
+        <!-- 이미지 추가 -->
+        <div class="bus-schedule-img">
+            <img src="images/bus_schedule_1.jpg">
+        </div>
+    </section>
+
+
+
+<!--------JavaScript for Toggle Menu-------->
+<script>
+
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+</script>
+
+<!-- Footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Welcome to the About Us page of Real-Time Location Tracker.<br>We are dedicated to providing accurate, reliable, and real-time tracking solutions<br>to help you stay connected and secure, wherever you are.
+    </p>
+    <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by SeoYeon</p>
+</section>
+
+</body>
+</html>
